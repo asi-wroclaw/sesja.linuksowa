@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+ruby '~> 2.6.0'
+
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-partial', require: 'sinatra/partial'
 gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'
