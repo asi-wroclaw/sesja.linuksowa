@@ -24,7 +24,7 @@ navigation:
   agenda_url: "/pl/agenda"
   lang_url: "/en"
   lang_agenda_url: "/en/agenda"
-  lang_flag: "/img/icon-us.png"
+  lang_flag: "/img/icon-en.png"
   lang_text: "English version"
   back_to_home: "Powrót do strony głównej"
 description:
