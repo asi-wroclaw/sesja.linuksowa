@@ -5,7 +5,7 @@ class SesjaLinuksowa < Sinatra::Application
     enable :sessions
 
     # Nie zapomnij zmienić tego!
-    set edition: "16"
+    set edition: "17"
     set :hide_talk_submission_form, true
 
     register Sinatra::R18n
