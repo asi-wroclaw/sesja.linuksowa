@@ -46,7 +46,7 @@ function switcher() {
 	var delay = 0;
 	var total = jQuery(".main-bg-container").length;
 	jQuery(".main-bg-container").each(function(i){
-		delay = delay + 7000;
+		delay = delay + 6000;
 		jQuery(this).css( "zIndex", 20 - i )
 		if(i === total -1)
 			{
@@ -80,7 +80,7 @@ function insertbgs() {
 	if(!mobileAndTabletcheck())
 	{
 		var lastNode = null;
-		for(i = 2; i <= 9; i++)
+		for(i = 2; i <= 12; i++)
 		{
 			lastNode = document.querySelectorAll(".main-bg-container");
 			lastNode = lastNode[lastNode.length -1];
