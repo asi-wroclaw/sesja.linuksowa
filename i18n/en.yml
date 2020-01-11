@@ -194,7 +194,7 @@ cfp:
     header: "Registration"
     content: "Registration you can find <a href='https://docs.google.com/forms/d/e/1FAIpQLSdd03q0yuKPSboCvtapF-DKVTswKCltbkq2NN0SeCnS0Q8YwA/viewform?usp=sf_link'>here</a></p><p> The number of places is limited ;)</p>"
 live:
-  title: "Playlist"
+  title: "Video recordings from previous edition"
   p1:
     header: "Transmission"
     content: "From all the lectures during the 15th Linux Session we will be streaming live video feed"
