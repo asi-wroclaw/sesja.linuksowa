@@ -234,6 +234,9 @@ sponsorship:
     content: "Would you like to support us? Here's what we can offer our sponsors!"
     link: "Sponsorship offer"
     link_href: "pdf/offer_en.pdf"
+corona:
+  p1: "Important announcement:"
+  p2: "Due to Coronavirus pandemic, we are forced to delay Linux Session until further notice. Stay tuned!"
 
 title: "Linux Session | Wrocław, Poland"
 pwr: "Wrocław University of Technology"
