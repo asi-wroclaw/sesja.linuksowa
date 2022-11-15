@@ -1,6 +1,11 @@
 GEM
-  remote: https://rubygems.org/
   remote: https://rails-assets.org/
+  specs:
+    rails-assets-bootstrap (4.3.1)
+    rails-assets-jquery (3.4.1)
+
+GEM
+  remote: https://rubygems.org/
   specs:
     better_errors (2.5.1)
       coderay (>= 1.0.0)
@@ -37,11 +42,9 @@ GEM
       byebug (~> 11.0)
       pry (~> 0.10)
     r18n-core (3.2.0)
-    rack (1.6.11)
+    rack (1.6.13)
     rack-protection (1.5.5)
       rack
-    rails-assets-bootstrap (4.3.1)
-    rails-assets-jquery (3.4.1)
     rake (11.3.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
