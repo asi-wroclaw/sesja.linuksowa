@@ -3,9 +3,9 @@ import ParticlesBackground from '../components/ParticlesBackground';
 import Image from 'next/image';
 import logo from '../assets/logo-duze-pl.png'
 import pinguin from '../assets/bg_pingwin.png'
-import { Text, Stack, VStack, HStack, Heading } from '@chakra-ui/react'
+import { Stack, VStack, Heading } from '@chakra-ui/react'
 import { useTheme } from '@chakra-ui/react'
-import { Show, Hide } from '@chakra-ui/react'
+import { Show } from '@chakra-ui/react'
 
 
 const HeadContainerStyle: StyleProps = {
@@ -59,7 +59,7 @@ const HeadSlice = () => {
     <ParticlesBackground />
     <Stack height="inherit" justifyContent="space-evenly" direction={{base:'column',lg: 'row'}}  position="absolute"  width="100%" top="0">
     <Show below='lg'>
-        <VStack justifyContent="center" maxWidth={700} width="30%" height="20%">
+        <VStack margin="auto" marginTop="8rem" justifyContent="center" maxWidth="700px" width="30%" height="20%">
           <Image alt="pinguin" src={pinguin} />
         </VStack>
       </Show>
