@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import HeadSlice from '../slices/HeadSlice';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,9 +20,11 @@ export default function Home() {
         <meta content='http://17.sesja.linuksowa.pl/' property='og:url'></meta>
         <meta content='Sesja Linuksowa to największa w Polsce konferencja poświęcona rozwiązaniom Open Source oraz najnowszym trendom w systemach z rodziny GNU/Linux.' property='og:description'></meta>
         <meta content='website' property='og:type'></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link type='image/x-icon' rel="icon" href="/favicon.ico" />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/site.webmanifest"></link>
       </Head>
 <Main/>
     </>
