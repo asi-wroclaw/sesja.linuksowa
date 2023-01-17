@@ -43,7 +43,7 @@ const SpotDescription = () => {
   const spot = ['Sala Centrum Kongresowego', 'budynek D-20', 'ul. Janiszewskiego 8', 'Politechnika Wrocławska'];
   return <VStack>
     {spot.map((text: string) =>
-      <Heading as="h3" fontSize={{ base: 'xl', md: '3xl' }} lineHeight={{ base: '1em', lg: '2em' }} fontWeight="semibold" mt={0} color="white">{text}</Heading>
+      <Heading key={text} as="h3" fontSize={{ base: 'xl', md: '3xl' }} lineHeight={{ base: '1em', lg: '2em' }} fontWeight="semibold" mt={0} color="white">{text}</Heading>
     )}
   </VStack>
 }
