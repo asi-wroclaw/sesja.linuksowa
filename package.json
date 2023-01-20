@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -20,6 +21,7 @@
     "eslint-config-next": "13.1.2",
     "framer-motion": "^6.5.1",
     "next": "13.1.2",
+    "next-sitemap": "^3.1.45",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-tsparticles": "^2.7.1",

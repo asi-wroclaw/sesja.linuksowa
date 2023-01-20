@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://17.sesja.linuksowa.pl/
+
+# Sitemaps
+Sitemap: https://17.sesja.linuksowa.pl/sitemap.xml
