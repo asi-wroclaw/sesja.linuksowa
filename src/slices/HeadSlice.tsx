@@ -1,4 +1,4 @@
-import { Box, StyleProps } from "@chakra-ui/react"
+import { Box, StyleProps, Button } from "@chakra-ui/react"
 import ParticlesBackground from '../components/ParticlesBackground';
 import Image from 'next/image';
 import logo from '../assets/logo-duze-pl.png'
@@ -48,9 +48,14 @@ const SpotDescription = () => {
   </VStack>
 }
 
+const AgendaButton = () => {
+   return <Button size='lg' variant='solid' colorScheme='purple'>Zobacz agendę</Button>
+}
+
 const HeadDescription = () => <VStack height="inherit" margin="0" width={{ base: "100%", lg: "50%" }} justifyContent="space-evenly">
   <Title />
   <SpotDescription />
+  <AgendaButton />
 </VStack>
 
 const HeadSlice = () => {
