@@ -6,6 +6,7 @@ import pinguin from '../assets/bg_pingwin.png'
 import { Stack, VStack, Heading } from '@chakra-ui/react'
 import { useTheme } from '@chakra-ui/react'
 import { Show } from '@chakra-ui/react'
+import DefaultButton from "@/components/DefaultButton";
 
 
 const HeadContainerStyle: StyleProps = {
@@ -48,14 +49,10 @@ const SpotDescription = () => {
   </VStack>
 }
 
-const AgendaButton = () => {
-   return <Button size='lg' variant='solid' colorScheme='purple'>Zobacz agendę</Button>
-}
-
 const HeadDescription = () => <VStack height="inherit" margin="0" width={{ base: "100%", lg: "50%" }} justifyContent="space-evenly">
   <Title />
   <SpotDescription />
-  <AgendaButton />
+  <DefaultButton text={'ZOBACZ AGENDĘ'}/>
 </VStack>
 
 const HeadSlice = () => {
