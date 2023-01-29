@@ -1,15 +1,15 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
-import { extendTheme } from "@chakra-ui/react"
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import { ChakraProvider } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   colors: {
-    primary: '#429096'
+    primary: "#429096",
   },
   fonts: {
-    body: 'MontserratSemiBold',
-    heading: 'MontserratSemiBold'
+    body: "MontserratSemiBold",
+    heading: "MontserratSemiBold",
   },
   // breakpoints: {
   //   sm: '30em',
@@ -33,10 +33,12 @@ const theme = extendTheme({
   //   "8xl": "6rem",
   //   "9xl": "8rem",
   // },
-})
+});
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <ChakraProvider theme={theme}>
-    <Component {...pageProps} />
-  </ChakraProvider>
+  return (
+    <ChakraProvider theme={theme}>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  );
 }
