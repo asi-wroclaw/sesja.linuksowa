@@ -1,11 +1,13 @@
-import { Box, StyleProps } from "@chakra-ui/react";
-import ParticlesBackground from "../components/ParticlesBackground";
-import Image from "next/image";
-import logo from "../assets/logo-duze-pl.png";
-import pinguin from "../assets/bg_pingwin.png";
-import { Stack, VStack, Heading } from "@chakra-ui/react";
-import { useTheme } from "@chakra-ui/react";
-import { Show } from "@chakra-ui/react";
+import { Box, StyleProps, Button } from "@chakra-ui/react"
+import ParticlesBackground from '../components/ParticlesBackground';
+import Image from 'next/image';
+import logo from '../assets/logo-duze-pl.png'
+import pinguin from '../assets/bg_pingwin.png'
+import { Stack, VStack, Heading } from '@chakra-ui/react'
+import { useTheme } from '@chakra-ui/react'
+import { Show } from '@chakra-ui/react'
+import DefaultButton from "@/components/DefaultButton";
+
 
 const HeadContainerStyle: StyleProps = {
   height: "100vh",
@@ -87,17 +89,11 @@ const SpotDescription = () => {
   );
 };
 
-const HeadDescription = () => (
-  <VStack
-    height="inherit"
-    margin="0"
-    width={{ base: "100%", lg: "50%" }}
-    justifyContent="space-evenly"
-  >
-    <Title />
-    <SpotDescription />
-  </VStack>
-);
+const HeadDescription = () => <VStack height="inherit" margin="0" width={{ base: "100%", lg: "50%" }} justifyContent="space-evenly">
+  <Title />
+  <SpotDescription />
+  <DefaultButton text={'ZOBACZ AGENDĘ'}/>
+</VStack>
 
 const HeadSlice = () => {
   return (
