@@ -34,13 +34,28 @@ const Title = () => {
   const theme = useTheme();
 
   return <VStack>
-    <Heading as="h1" fontSize={{ base: '4xl', md: '7xl' }} textAlign="center" fontWeight="semibold" color="white" >17 Sesja Linuksowa</Heading>
-    <Heading as="h2" fontSize={{ base: 'xl', md: '4xl' }} textAlign="center" fontWeight="semibold" bgColor={theme.colors.primary} color="white">22-23 kwietnia 2022 Wrocław, Polska</Heading>
+    <Heading 
+      as="h1" 
+      fontSize={{ base: '4xl', md: '7xl' }} 
+      textAlign="center" 
+      fontWeight="semibold" 
+      color="white">
+        17 Sesja Linuksowa
+    </Heading>
+    <Heading
+      as="h2" 
+      fontSize={{ base: 'xl', md: '4xl' }} 
+      textAlign="center" 
+      fontWeight="semibold" 
+      bgColor={theme.colors.primary} 
+      color="white">
+        &nbsp;22-23 kwietnia 2022 Wrocław, Polska&nbsp;
+    </Heading>
   </VStack>;
 };
 
 const SpotDescription = () => {
-  const spot = ['Sala Centrum Kongresowego', 'budynek D-20', 'ul. Janiszewskiego 8', 'Politechnika Wrocławska'];
+  const spot = ['Politechnika Wrocławska', 'Budynek D-20', 'Centrum Kongresowe', 'ul. Janiszewskiego 8'];
   return <VStack>
     {spot.map((text: string) =>
       <Heading key={text} as="h3" fontSize={{ base: 'xl', md: '3xl' }} lineHeight={{ base: '1em', lg: '2em' }} fontWeight="semibold" mt={0} color="white">{text}</Heading>
@@ -57,8 +72,8 @@ const HeadSlice = () => {
   return <Box {...HeadContainerStyle} m={0}>
     <NavBar />
     <ParticlesBackground />
-    <Stack height="inherit" justifyContent="space-evenly" direction={{base:'column',lg: 'row'}}  position="absolute"  width="100%" top="0">
-    <Show below='lg'>
+    <Stack height="inherit" justifyContent="space-evenly" direction={{ base: 'column', lg: 'row' }} position="absolute" width="100%" top="0">
+      <Show below='lg'>
         <VStack margin="auto" marginTop="8rem" justifyContent="center" maxWidth="700px" width="30%" height="20%">
           <Image alt="pinguin" src={pinguin} />
         </VStack>
