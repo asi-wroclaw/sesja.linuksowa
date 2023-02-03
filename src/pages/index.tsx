@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import HeadSlice from "../slices/HeadSlice";
 import AboutUs from "../slices/AboutUs";
+import PreviousEdition from "@/slices/PreviousEdition";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,6 +10,7 @@ const Main = () => (
   <main>
     <HeadSlice />
     <AboutUs />
+    <PreviousEdition />
   </main>
 );
 
