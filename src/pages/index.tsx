@@ -2,6 +2,8 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import HeadSlice from "../slices/HeadSlice";
 import AboutUs from "../slices/AboutUs";
+import config from "../config";
+import Agenda from "../slices/agenda/Index";
 import PreviousEdition from "@/slices/PreviousEdition";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,6 +13,7 @@ const Main = () => (
     <HeadSlice />
     <AboutUs />
     <PreviousEdition />
+    {config.SHOW_AGENDA && <Agenda />}
   </main>
 );
 
