@@ -25,7 +25,7 @@ const PreviousEdition = () => {
     <Box
       display="flex"
       width="100%"
-      bg={theme.colors.primary}
+      bg='whiteAlpha.900'
       minHeight="70vh"
       opacity="90%"
       alignItems="center"
@@ -33,7 +33,7 @@ const PreviousEdition = () => {
     >
       <Flex
         width="95%"
-        marginY="auto"
+        marginY={{ base: "5%", lg: 'auto' }}
         direction={{ base: "column", lg: "row" }}
       >
         <Center flex={1}>
@@ -46,8 +46,8 @@ const PreviousEdition = () => {
             >
               {content.text}
             </Heading>
-            <Link href={content.previousEditionUrl}>
-              <DefaultButton text={content.buttonText} />
+            <Link _hover={{ textDecorationLine: "none" }} href={content.previousEditionUrl}>
+              <DefaultButton _hover={{color:'black'}} text={content.buttonText} />
             </Link>
           </VStack>
         </Center>
