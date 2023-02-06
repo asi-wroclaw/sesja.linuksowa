@@ -7,6 +7,7 @@ import { Stack, VStack, Heading } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
 import { Show } from "@chakra-ui/react";
 import DefaultButton from "@/components/DefaultButton";
+import config from '../config';
 
 const HeadContainerStyle: StyleProps = {
   height: "100vh",
@@ -97,7 +98,7 @@ const HeadDescription = () => (
   >
     <Title />
     <SpotDescription />
-    <DefaultButton text={"ZOBACZ AGENDĘ"} />
+    {config.SHOW_AGENDA &&<DefaultButton text={"ZOBACZ AGENDĘ"} />}
   </VStack>
 );
 
