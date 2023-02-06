@@ -8,16 +8,17 @@ interface DefaultButtonProps {
   size?: string;
 }
 
-const DefaultButton = (Props: DefaultButtonProps) => {
-  const {
-    size = "lg",
-    variant = "solid",
-    bg = "#6F2DBD",
-    color = "white",
-    text,
-  } = Props;
+const DefaultButton = (props: DefaultButtonProps) => {
+  const { text } = props;
+  const buttonProps = {
+    size: "lg",
+    variant: "solid",
+    bg: "#6F2DBD",
+    color: "white",
+    ...props
+  } satisfies DefaultButtonProps;
   return (
-    <Button size={size} variant={variant} bg={bg} color={color}>
+    <Button {...buttonProps}>
       {text}
     </Button>
   );
