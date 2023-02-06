@@ -57,19 +57,14 @@ const Title = () => {
         bgColor={theme.colors.primary}
         color="white"
       >
-        22-23 kwietnia 2022 Wrocław, Polska
+        &nbsp;22-23 kwietnia 2022 Wrocław, Polska&nbsp;
       </Heading>
     </VStack>
   );
 };
 
 const SpotDescription = () => {
-  const spot = [
-    "Sala Centrum Kongresowego",
-    "budynek D-20",
-    "ul. Janiszewskiego 8",
-    "Politechnika Wrocławska",
-  ];
+  const spot = ['Politechnika Wrocławska', 'Budynek D-20', 'Centrum Kongresowe', 'ul. Janiszewskiego 8'];
   return (
     <VStack>
       {spot.map((text: string) => (
