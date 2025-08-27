@@ -163,28 +163,55 @@ body {
 }
 
 /* Container */
+@media screen and (max-width: 480px) {
 
-body {
-  min-width: 1200px;
+  body {
+    min-width: 100%
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+  }
+
+  /* Modifiers */
+
+  .container.small {
+    width: 75%
+  }
+
+  .container.big {
+    width: 100%;
+    max-width: 125%;
+    min-width: 100%
+  }
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 480px) {
+  body {
+    min-width: 1200px
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px
+  }
+
+  /* Modifiers */
+
+  .container.small {
+    width: 900px
+  }
+
+  .container.big {
+    width: 100%;
+    max-width: 1500px;
+    min-width: 1200px
+  }
 }
 
-/* Modifiers */
-
-.container.small {
-  width: 900px;
-}
-
-.container.big {
-  width: 100%;
-  max-width: 1500px;
-  min-width: 1200px;
-}
 
 /* Grid */
 
@@ -317,6 +344,7 @@ body {
   padding-top: 0;
 }
 
+
 /* Modifiers */
 
 /* Flush */
@@ -383,4 +411,52 @@ body {
 
 .row.double {
   margin-left: calc(-1 * var(--gutters) * 2);
+}
+
+/* Mobile collapse */
+@media screen and (max-width: 480px) {
+  .row:not(.no-collapse):not(.no-collapse-1):not(.no-collapse-2):not(.no-collapse-3) {
+    margin-left: 0
+  }
+
+  .row:not(.no-collapse):not(.no-collapse-1):not(.no-collapse-2):not(.no-collapse-3)>* {
+    float: none !important;
+    width: 100% !important;
+    margin-left: 0 !important
+  }
+
+  .row:not(.flush):not(.no-collapse):not(.no-collapse-1):not(.no-collapse-2):not(.no-collapse-3)>* {
+    padding: 5px 0 5px 0 !important;
+  }
+
+  .container {
+    max-width: none !important;
+    min-width: 0 !important;
+    width: 100% !important
+  }
+}
+
+/* Hiding */
+
+@media screen and (max-width: 480px) {
+  .not-mobile {
+    display: none !important
+  }
+
+  .only-desktop,
+  .only-1000px {
+    display: none !important
+  }
+}
+
+@media screen and (min-width: 481px) {
+
+  .not-desktop,
+  .not-1000px {
+    display: none !important
+  }
+
+  .only-mobile {
+    display: none !important
+  }
 }
