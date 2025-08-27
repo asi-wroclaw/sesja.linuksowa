@@ -1,3 +1,19 @@
+:root {
+  --gutters: 40px;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --gutters: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  :root {
+    --gutters: 20px;
+  }
+}
+
 /* Resets (http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)) */
 
 html,
@@ -131,7 +147,7 @@ table {
 }
 
 body {
-  -webkit-text-size-adjust: none
+  -webkit-text-size-adjust: none;
 }
 
 /* Box Model */
@@ -267,7 +283,7 @@ body {
 }
 
 .row>* {
-  padding: 40px 0 0 40px;
+  padding: calc(var(--gutters)) 0 0 calc(var(--gutters));
   float: left;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -277,11 +293,11 @@ body {
 }
 
 .row+.row>* {
-  padding-top: 40px;
+  padding-top: calc(var(--gutters));
 }
 
 .row {
-  margin-left: -40px;
+  margin-left: calc(-1 * var(--gutters));
 }
 
 /* Rows */
@@ -316,55 +332,55 @@ body {
 /* Quarter */
 
 .row.quarter>* {
-  padding: 10px 0 0 10px;
+  padding: calc(var(--gutters) / 4) 0 0 calc(var(--gutters) / 4);
 }
 
 .row.quarter+.row.quarter>* {
-  padding-top: 10px;
+  padding-top: calc(var(--gutters) / 4);
 }
 
 .row.quarter {
-  margin-left: -10px;
+  margin-left: calc(-1 * var(--gutters) / 4);
 }
 
 /* Half */
 
 .row.half>* {
-  padding: 20px 0 0 20px;
+  padding: calc(var(--gutters) / 2) 0 0 calc(var(--gutters) / 2);
 }
 
 .row.half+.row.half>* {
-  padding-top: 20px;
+  padding-top: calc(var(--gutters) / 2);
 }
 
 .row.half {
-  margin-left: -20px;
+  margin-left: calc(-1 * var(--gutters) / 2);
 }
 
 /* One and (a) Half */
 
 .row.oneandhalf>* {
-  padding: 60px 0 0 60px;
+  padding: calc(var(--gutters) * 1.5) 0 0 calc(var(--gutters) * 1.5);
 }
 
 .row.oneandhalf+.row.oneandhalf>* {
-  padding-top: 60px;
+  padding-top: calc(var(--gutters) * 1.5);
 }
 
 .row.oneandhalf {
-  margin-left: -60px;
+  margin-left: calc(-1 * var(--gutters) * 1.5);
 }
 
 /* Double */
 
 .row.double>* {
-  padding: 80px 0 0 80px;
+  padding: calc(var(--gutters) * 2) 0 0 calc(var(--gutters) * 2);
 }
 
 .row.double+.row.double>* {
-  padding-top: 80px;
+  padding-top: calc(var(--gutters) * 2);
 }
 
 .row.double {
-  margin-left: -80px;
+  margin-left: calc(-1 * var(--gutters) * 2);
 }
